@@ -13,5 +13,8 @@ First begin by placing each component you will be using on the breadboard so tha
 
 The SD card is optional, though if you do not use an SD card the device can not be connected to Thonny while you gather data, otherwise you will get an error staing
 ```[bash]
-Traceback (most recent call last): File "<stdin>", line 48, in <module> File "<stdin>", line 20, in __init__ RuntimeError: Cannot remount path when visible via USB.
+Traceback (most recent call last): File "<stdin>", 
+line 48, in <module> File "<stdin>", 
+line 20, in __init__ 
+RuntimeError: Cannot remount path when visible via USB.
 ```
