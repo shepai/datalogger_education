@@ -8,14 +8,22 @@ import time
 from sensors import *
 
 class datalogger:
-    def __init__(self,spi,cs):
-        sdcard = sdcardio.SDCard(spi, cs)
-        self.vfs = storage.VfsFat(sdcard)
-        storage.mount(self.vfs, "/sd")
-        print("successful mount")
+    def __init__(self,spi=None,cs=None):
+        self.mode=""
+        try:
+            sdcard = sdcardio.SDCard(spi, cs)
+            self.vfs = storage.VfsFat(sdcard)
+            storage.mount(self.vfs, "/sd")
+            print("successful mount")
+            self.mode="/sd/"
+        except:
+            print("No sd card found... using local storage")
+            storage.remount("/", readonly=False)
+            self.mode="/"
+
         #set up sd and file
     def create_file(self,filename):
-        self.file=open("/sd/"+filename,"w")
+        self.file=open(self.mode+filename,"w")
     def write_data(self,data):
         if self.isSpace():
             try:
@@ -25,7 +33,7 @@ class datalogger:
         #if there is space
         #write data in the chosen format
     def isSpace(self):
-        stats = self.vfs.statvfs("/sd")
+        stats = self.vfs.statvfs(self.mode)
         total_space=stats[2]*stats[1]
         free_space = stats[3] * stats[1]
         used_space = total_space-free_space
