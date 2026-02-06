@@ -19,7 +19,7 @@ line 48, in <module> File "<stdin>",
 line 20, in __init__ 
 RuntimeError: Cannot remount path when visible via USB.
 ```
-If this happens, simply unplug the device and make sure your code is running on boot by saving it as ```code.py``` so that as soon as power goes into the device, it runs your program. If you are using a USB plugged into your laptop and it keeps reconnecting automatically to Thonny, close Thonny before gathering data and plugging the device in. 
+If this happens, simply unplug the device and make sure your code is running on boot by saving it as ```code.py``` so that as soon as power goes into the device, it runs your program. If you are using a USB plugged into your laptop and it keeps reconnecting automatically to Thonny, close Thonny before gathering data and plugging the device in. Remember that the device has limited data sorage, so be sure to keep backing up the files on your PC. 
 
 If you do have an SD card then it is wired as follows: 
 
@@ -35,8 +35,11 @@ The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be usi
 ADD IMAGE OF MPU 6050
 
 ### Push button
-We include the use of a push button to allow you to stop and start recording 
+We include the use of a push button to allow you to stop and start recording from the sensor to your file.
+
+ADD IMAGE OF BUTTON
 
 ### LED
 The LED is our user interface. On smart phones we have screens that tell us what is going on, but if we are trying to be low cost, low power consuming, we can use an LED to let us know if we are recording data or not. 
 
+ADD IMAGE OF LED
