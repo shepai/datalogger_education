@@ -26,4 +26,4 @@ If you do have an SD card then it is wired as follows:
 ADD IMAGE OF SD CARD
 
 ### MPU6050 sensor 
-THe MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be using this sensor to gather human data. 
+The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be using this sensor to gather human movement datasets that we can later classify. 
