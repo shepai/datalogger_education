@@ -25,9 +25,18 @@ If you do have an SD card then it is wired as follows:
 
 ADD IMAGE OF SD CARD
 
+Different SD readers may have different power requriements. Below is a table that explains what should be wired to what.
+
+ADD TABLE WITH SD CARDS AND POWER PINS
+
 ### MPU6050 sensor 
 The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be using this sensor to gather human movement datasets that we can later classify. 
 
 ADD IMAGE OF MPU 6050
 
-###
+### Push button
+We include the use of a push button to allow you to stop and start recording 
+
+### LED
+The LED is our user interface. On smart phones we have screens that tell us what is going on, but if we are trying to be low cost, low power consuming, we can use an LED to let us know if we are recording data or not. 
+
