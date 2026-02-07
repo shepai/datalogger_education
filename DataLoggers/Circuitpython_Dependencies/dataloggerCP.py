@@ -20,10 +20,11 @@ class datalogger:
             print("No sd card found... using local storage")
             storage.remount("/", readonly=False)
             self.mode="/"
-
+        self.opened=0
         #set up sd and file
     def create_file(self,filename):
         self.file=open(self.mode+filename,"w")
+        self.opened=1
     def write_data(self,data):
         if self.isSpace():
             try:
@@ -42,6 +43,7 @@ class datalogger:
         return 0
         #check how much space there is
     def close(self):
+        self.opened=0
         self.file.close()
         #close and save the file
 

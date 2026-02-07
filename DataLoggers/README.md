@@ -6,6 +6,8 @@ Once you have all of these, you may need to reflash the Raspberry Pi Pico if it 
 
 See <a href="https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython">this tutorial</a> for more detail.
 
+Once all set up you will need to upload the libary dependencies to the board. The files can be found under ```/Circuitpython_Dependencies``` copy and paste the contents of this folder into ```lib/``` on the pico. If there are compatibility issues with any of these libraries it might be because your circuitpython flash is more up to date than these libraries. If so you will need to install the latest ones from <a href="https://circuitpython.org/libraries">here</a>.
+
 ## Wiring
 To wire up your data logger you will need to select sensors you want to read from, SD card reader (optional), breadboard, buttons and Pico. 
 
@@ -53,6 +55,13 @@ The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be usi
        style="transform: rotate(90deg);">
 </p>
 
+| MPU6050 Pin | Pico Pin |
+|-------|-------|
+| GND | GND |
+| VCC | 3.3 |
+| SDA | GP20 |
+| SCL | GP21 |
+
 ### Push button
 We include the use of a push button to allow you to stop and start recording from the sensor to your file.
 
@@ -70,3 +79,4 @@ The LED is our user interface. On smart phones we have screens that tell us what
   <img src="../Assets/Screenshot 2026-02-07 092959.png" width="70%">
 </p>
 
+Notice that the LED has one pin slightly longer than the other. The longer pin is our positive, and shorter pin the negative. Connect the shorter pin to the GND on the Pico, and longer pin to GP28
