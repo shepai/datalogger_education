@@ -47,9 +47,19 @@ The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be usi
 ### Push button
 We include the use of a push button to allow you to stop and start recording from the sensor to your file.
 
-ADD IMAGE OF BUTTON
+<p align="center">
+  <img src="../Assets/Screenshot 2026-02-07 093117.png"
+       width="30%"
+       style="transform: rotate(90deg);">
+</p>
+
 
 ### LED
 The LED is our user interface. On smart phones we have screens that tell us what is going on, but if we are trying to be low cost, low power consuming, we can use an LED to let us know if we are recording data or not. 
 
-ADD IMAGE OF LED
+<p align="center">
+  <img src="../Assets/Screenshot 2026-02-07 092959.png" width="70%">
+</p>
+
+
+
