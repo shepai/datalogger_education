@@ -24,7 +24,7 @@ If this happens, simply unplug the device and make sure your code is running on 
 If you do have an SD card then it is wired as follows: 
 
 <p align="center">
-  <img src=".\Assets\Screenshot from 2026-02-06 17-15-32.png" width="400">
+  <img src="../Assets/Screenshot from 2026-02-06 17-15-32.png" width="400">
 </p>
 
 Different SD readers may have different power requriements. Below is a table that explains what should be wired to what.
