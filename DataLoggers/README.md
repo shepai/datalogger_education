@@ -34,7 +34,9 @@ ADD TABLE WITH SD CARDS AND POWER PINS
 ### MPU6050 sensor 
 The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be using this sensor to gather human movement datasets that we can later classify. 
 
-ADD IMAGE OF MPU 6050
+<p align="center">
+  <img src="../Assets\Screenshot from 2026-02-06 16-53-51.png" width="50%">
+</p>
 
 ### Push button
 We include the use of a push button to allow you to stop and start recording from the sensor to your file.
