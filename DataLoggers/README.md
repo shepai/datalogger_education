@@ -27,6 +27,15 @@ If you do have an SD card then it is wired as follows:
   <img src="../Assets/Screenshot from 2026-02-06 17-15-32.png" width="70%">
 </p>
 
+| SD Pin | Pico Pin |
+|-------|-------|
+| MOSI | GP3 |
+| MISO | GP4 |
+| GND | GND |
+| 5V/3.3 | See table below |
+| SCK | GP2 |
+| CS | GP1 |
+
 Different SD readers may have different power requriements. Below is a table that explains what should be wired to what.
 
 | SD card holder | Power requirement | Pin on Pico |
@@ -60,6 +69,4 @@ The LED is our user interface. On smart phones we have screens that tell us what
 <p align="center">
   <img src="../Assets/Screenshot 2026-02-07 092959.png" width="70%">
 </p>
-
-
 
