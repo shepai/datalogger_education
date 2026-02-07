@@ -29,11 +29,11 @@ If you do have an SD card then it is wired as follows:
 
 Different SD readers may have different power requriements. Below is a table that explains what should be wired to what.
 
-ADD TABLE WITH SD CARDS AND POWER PINS
 | SD card holder | Power requirement | Pin on Pico |
 |------|-------|-------|
-| ![Demo1](../Assets/Screenshot from 2026-02-06 17-16-28.png) | 5V | VBUS |
-| ![Demo2](../Assets/Screenshot from 2026-02-06 17-16-35.png) | 3.3 | 3.3 |
+| ![Demo1](../Assets/Screenshot%20from%202026-02-06%2017-16-28.png) | 5V | VBUS |
+| ![Demo2](../Assets/Screenshot%20from%202026-02-06%2017-16-35.png) | 3.3V | 3.3 |
+
 
 ### MPU6050 sensor 
 The MPU6050 is a gyroscope, accelerometer and temperature sensor. We will be using this sensor to gather human movement datasets that we can later classify. 
