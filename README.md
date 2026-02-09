@@ -8,3 +8,4 @@ You can see instructions and code for building the device under /DataLoggers. Ti
 Now we have a dataset we can build classifiers to recognise whether a movement is one or another. Head over to /MachineLearning to convert your datasets into the formats required and train a model to classisfy. 
 
 You will need either google notebooks or <a href="https://code.visualstudio.com/download">vscode</a> with the <a href="https://www.youtube.com/watch?v=h1sAzPojKMg">jupyter extention </a>. 
+

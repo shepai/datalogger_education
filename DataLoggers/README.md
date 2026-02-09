@@ -93,4 +93,4 @@ Now you have a device that can record multiple datasets. The device should look 
   <img src="../Assets/46090.jpg" width="70%">
 </p>
 
-Ideally if you have an external phone charger, you can power the device on the move with the USB. Otherwise keep it connected to your laptop and carefully perform different tasks while holding the data logger device. 
+Ideally if you have an external phone charger, you can power the device on the move with the USB. Otherwise keep it connected to your laptop and carefully perform different tasks while holding the data logger device. Try keep the examples similar lenght, get someone in your group to time. 
