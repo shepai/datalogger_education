@@ -27,7 +27,7 @@ def read():
 toggle=False
 LED.value=False
 num=0
-#loop
+#loop 
 while 1:
    if not btn.value:
       toggle = not toggle
@@ -37,8 +37,9 @@ while 1:
       else: #if no file is opened
          logger.create_file("log"+str(num)+".csv")
          num+=1
+      time.slep(0.2)
    if toggle:
      dataline=read()
      logger.write_data(dataline)
-   time.sleep(0.3)
+   time.sleep(0.1)
 #when toggeled on record, when toggled off stop

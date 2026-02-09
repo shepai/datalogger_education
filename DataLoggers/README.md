@@ -80,3 +80,17 @@ The LED is our user interface. On smart phones we have screens that tell us what
 </p>
 
 Notice that the LED has one pin slightly longer than the other. The longer pin is our positive, and shorter pin the negative. Connect the shorter pin to the GND on the Pico, and longer pin to GP28
+
+## Coding
+Once the libraries are uploaded under the \lib folder, you can upload the ```demo code.py``` file to the pico and rename it as code.py which will allow it to run on boot. 
+The coding is all done for you, but if you are feeling confident have a play around to try understand it. 
+
+## Gathering your dataset
+
+Now you have a device that can record multiple datasets. The device should look something like this. When you give it power it is ready to go, if you press the button then the LED should come on, and when you press it again it goes off. While the LED is on, the device is recording. Your first file will be called log0.csv, then second one log1.csv and so on. Remember what you are doing for each file, for you will need to label it when you make classifiers later on. 
+
+<p align="center">
+  <img src="../Assets/46090.jpg" width="70%">
+</p>
+
+Ideally if you have an external phone charger, you can power the device on the move with the USB. Otherwise keep it connected to your laptop and carefully perform different tasks while holding the data logger device. 
