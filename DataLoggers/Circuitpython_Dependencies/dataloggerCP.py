@@ -29,16 +29,21 @@ class datalogger:
         if self.isSpace():
             try:
                 self.file.write(data)
+                self.file.flush()
+                os.sync() 
             except:
                 print("Could not write") #you could also consider putting errors or LED flashes here
         #if there is space
         #write data in the chosen format
     def isSpace(self):
-        stats = self.vfs.statvfs(self.mode)
-        total_space=stats[2]*stats[1]
-        free_space = stats[3] * stats[1]
-        used_space = total_space-free_space
-        if used_space/(1024**3)<14: #space exists
+        try:
+            stats = self.vfs.statvfs(self.mode)
+            total_space=stats[2]*stats[1]
+            free_space = stats[3] * stats[1]
+            used_space = total_space-free_space
+            if used_space/(1024**3)<14: #space exists
+                return 1
+        except:
             return 1
         return 0
         #check how much space there is
@@ -46,4 +51,5 @@ class datalogger:
         self.opened=0
         self.file.close()
         #close and save the file
+
 

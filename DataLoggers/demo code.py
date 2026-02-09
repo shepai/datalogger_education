@@ -8,12 +8,12 @@ import time
 
 #set up the pins 
 spi = busio.SPI(board.GP2, board.GP3, board.GP4)
-cs = digitalio.DigitalInOut(board.GP1)
-i2c = board.I2C(board.GP20,board.GP21) #might need to flip it
+cs = board.GP1
+i2c = busio.I2C(board.GP21,board.GP20) #might need to flip it
 btn=digitalio.DigitalInOut(board.GP18)
 btn.direction=digitalio.Direction.INPUT
 btn.pull=digitalio.Pull.UP
-LED=digitalio.DigitalInOut(board.GP18)
+LED=digitalio.DigitalInOut(board.GP28)
 LED.direction=digitalio.Direction.OUTPUT
 #set up the sensor
 mpu = adafruit_mpu6050.MPU6050(i2c)
@@ -28,10 +28,10 @@ toggle=False
 LED.value=False
 num=0
 #loop
-while 1: 
+while 1:
    if not btn.value:
       toggle = not toggle
-      LED.value = not LED
+      LED.value = not LED.value
       if logger.opened: #save the file
          logger.close()
       else: #if no file is opened
@@ -40,5 +40,5 @@ while 1:
    if toggle:
      dataline=read()
      logger.write_data(dataline)
-   time.sleep(0.2)
+   time.sleep(0.3)
 #when toggeled on record, when toggled off stop
