@@ -37,7 +37,7 @@ while 1:
       else: #if no file is opened
          logger.create_file("log"+str(num)+".csv")
          num+=1
-      time.slep(0.2)
+      time.sleep(0.2)
    if toggle:
      dataline=read()
      logger.write_data(dataline)
